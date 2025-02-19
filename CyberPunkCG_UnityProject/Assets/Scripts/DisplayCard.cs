@@ -29,21 +29,23 @@ public class DisplayCard : MonoBehaviour
 
     void Update()
     {
+        // When implementing on Unity, if you dont atribute the text variable to an text object in the scene, it will return an error
+
         cardName = displayCardList[0].cardName;
-        // cardID = displayCardList[0].cardID;
+        cardID = displayCardList[0].cardID;
         cardDescription = displayCardList[0].cardDescription;
         cost = displayCardList[0].cost;
-        // specialAbility = displayCardList[0].specialAbility;
-        // health = displayCardList[0].health;
-        // attack = displayCardList[0].attack;
+        specialAbility = displayCardList[0].specialAbility;
+        health = displayCardList[0].health;
+        attack = displayCardList[0].attack;
 
-         cardNameText.text = "" + cardName;
+        cardNameText.text = "" + cardName;
         // cardIDText.text = "" + cardID;
         cardDescriptionText.text = " " + cardDescription;
         costText.text = " " + cost;
-        // specialAbilityText.text = " " + specialAbilityText;
-        // healthText.text = " " + health;
-        // attackText.text = " " + attack;
+        specialAbilityText.text = "" + specialAbility;
+        healthText.text = " " + health;
+        attackText.text = " " + attack;
 
     }
     }
